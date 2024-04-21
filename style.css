@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+body {
+  color: whitesmoke;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 10%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 600;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.7s;
+}
+.nav a:hover,
+.nav a.active {
+  color: #9522b4;
+}
+.home {
+  display: flex;
+  background: url("Untitled\ design\ \(1\).png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  height: 110vh;
+  padding: 0 10%;
+}
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.home-content h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1s;
+}
+.home-content h3 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  color: #9522b4;
+}
+.home-content h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.5s;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.home-content p {
+  position: relative;
+  font-size: 18px;
+  margin: 20px 0 40px;
+}
+.home-content p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 1.9s;
+}
+.home-content .btn-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  height: 40px;
+}
+.home-content .btn-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 2.2s;
+  z-index: 2;
+}
+.btn-box a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background-color: #9522b4;
+  border: 2px solid #9522b4;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #140119;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn-box a:hover {
+  color: #9522b4;
+}
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #9522b4;
+}
+.btn-box a:nth-child(2):hover {
+  color: #140119;
+}
+.btn-box a:nth-child(2)::before {
+  background: #9522b4;
+}
+.btn-box a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #140119;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn-box a:hover::before {
+  width: 100%;
+}
+.home-sci {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 40px;
+  width: 170px;
+}
+.home-sci::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 3s;
+  z-index: 2;
+}
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #9522b4;
+  border-radius: 50%;
+  color: #9522b4;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.home-sci a:hover {
+  color: #140119;
+}
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #9522b4;
+  z-index: -1;
+  transition: 0.5s;
+}
+.home-sci a:hover::before {
+  width: 100%;
+}
+.home-imghover {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  width: 500px;
+  height: 100%;
+  background: transparent;
+  transition: 1.8s;
+  animation: manipActivehover 0.1s forwards;
+  animation-delay: 4s;
+  pointer-events: none;
+}
+.home-imghover:hover {
+  background-color: #140119;
+  opacity: 0.9;
+}
+.home-imghover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140119;
+  animation: showRight 1s ease forwards;
+  animation-delay: 3.6s;
+  z-index: 100;
+}
+
+/* animation keyframes */
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+@keyframes manipActivehover {
+  100% {
+    pointer-events: auto;
+  }
+}
